@@ -1,0 +1,13 @@
+.row{
+    margin: 0;
+
+}
+div{
+    background-color: rgb(39,80,167);
+}
+h1, h3{
+    display: inline;
+}
+.table_conteiner{
+    overflow-x: auto;
+}

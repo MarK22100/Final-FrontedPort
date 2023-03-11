@@ -1,0 +1,17 @@
+.hys{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: rgb(39,80,167);
+    padding: 20px;
+}
+ .title{
+    display: flex;
+    justify-content: space-between;
+ }
+.circulo{
+    flex: 1;
+    align-items: center;
+    width: max-content;
+}
