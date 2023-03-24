@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
+
+import { environmentprod } from 'src/environments/environment.prod';
 import { JwtDto } from '../model/jwt-dto';
 import { LoginUsuario } from '../model/login-usuario';
 import { NuevoUsuario } from '../model/nuevo-usuario';
@@ -13,16 +14,18 @@ export class AuthService {
 
   authURL = 'https://localhost:8080/auth/';
 
-  URL = environment.URL + 'auth/';
+  ENDPOINT ='https://back-portf.onrender.com/auth/'
+
+  URL = environmentprod.URL + 'auth/';
 
 
   constructor(private httpClient: HttpClient) { }
 
  public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
-   return this.httpClient.post<any>(this.URL + 'nuevo', nuevoUsuario);
+   return this.httpClient.post<any>(this.ENDPOINT + 'nuevo', nuevoUsuario);
  }
 
  public login(loginUsuario: LoginUsuario): Observable<JwtDto>{
-   return this.httpClient.post<JwtDto>(this.URL + 'login', loginUsuario)
+   return this.httpClient.post<JwtDto>(this.ENDPOINT + 'login', loginUsuario)
  }
 }
