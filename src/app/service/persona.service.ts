@@ -14,7 +14,7 @@ export class PersonaService {
 
   URL = environmentprod.URL + 'usuarios/';
 
-  ENDPOINT ='https://back-portf.onrender.com/usuarios/'
+  ENDPOINT ='https://final-backend-portf.vercel.app/usuarios/'
 
   constructor(private http: HttpClient) { }
 

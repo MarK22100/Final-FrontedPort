@@ -14,7 +14,7 @@ export class AuthService {
 
   authURL = 'https://localhost:8080/auth/';
 
-  ENDPOINT ='https://back-portf.onrender.com/auth/'
+  ENDPOINT ='https://final-backend-portf.vercel.app/'
 
   URL = environmentprod.URL + 'auth/';
 
